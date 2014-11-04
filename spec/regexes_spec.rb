@@ -64,6 +64,20 @@ describe "regex_matching_two_words_separated_by_a_space" do
   end
 end
 
+describe "regex_matching_two_numbers" do
+  it "matches '23'" do
+    expect(regex_matching_two_numbers).to match "23"
+  end
+
+  it "matches 'a 2 b 4'" do
+    expect(regex_matching_two_numbers).to match "a 2 b 4"
+  end
+
+  it "does not match 'a 2 b'" do
+    expect(regex_matching_two_numbers).not_to match "a 2 b"
+  end
+end
+
 describe "regex_matching_two_words_separated_by_some_of_space" do
   it "matches 'i_am over_here'" do
     expect(regex_matching_two_words_separated_by_some_space).to match "i_am over_here"

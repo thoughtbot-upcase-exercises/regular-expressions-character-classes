@@ -22,6 +22,13 @@ module CharacterClasses
     /WRITE ME/
   end
 
+  # Returns a regex that matches any string with two single-digit numbers in it.
+  #
+  # Examples: "23", "a 2 b 4".
+  def regex_matching_two_numbers
+    /WRITE ME/
+  end
+
   # Returns a regex matching two words, separated by some amount of whitespace.
   # Whitespace can be tabs, spaces, newlines, etc.
   def regex_matching_two_words_separated_by_some_space
