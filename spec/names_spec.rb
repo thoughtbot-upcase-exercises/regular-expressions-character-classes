@@ -47,10 +47,5 @@ describe Names do
     it "does not match 'J B'" do
       expect(Names.new.matching_first_name_last_name).not_to match "J B"
     end
-
-    it 'matches "7 Costanza"' do
-      pending "This is a bonus spec, uncomment it when you've solved all the other ones"
-      expect(Names.new.matching_first_name_last_name).to match "7 Costanza"
-    end
   end
 end
