@@ -37,7 +37,7 @@ class CharacterClasses
   # It should not match:
   #   * "james"
   #   * "abc"
-  def regex_matching_not_lowercase
+  def matching_not_lowercase
     /WRITE ME/
   end
 end
